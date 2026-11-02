@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix — Вход</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка страницы -->
+    <header>
+        <a href="#" class="netflix-logo">NETFLIX</a>
+    </header>
+
+    <!-- Центрированный контент формы -->
+    <main>
+        <div class="login-card">
+            
+            <h1 class="title">Введите свои данные для входа</h1>
+            <p class="subtitle">Или зарегистрируйте новый аккаунт.</p>
+
+            <form action="#" method="POST" onsubmit="return false;">
+                <div class="form-group">
+                    <input 
+                        type="text" 
+                        class="input-field" 
+                        placeholder="Адрес эл. почты или номер телефона" 
+                        required
+                        autocomplete="off"
+                    >
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    Продолжить
+                </button>
+            </form>
+
+            <!-- CSS-only раскрывающийся блок помощи -->
+            <div class="help-container">
+                <details class="help-containerDetails">
+                    <summary class="help-toggle">
+                        <span>Получить помощь</span>
+                        <span class="arrow-down">∨</span>
+                    </summary>
+                    <div class="help-content">
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Не удается войти в аккаунт?</a>
+                        <a href="#">Центр поддержки Netflix</a>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Текст о защите Google reCAPTCHA -->
+            <p class="recaptcha-notice">
+                Эта страница защищена Google reCAPTCHA, чтобы мы знали, что вы не бот.
+            </p>
+
+        </div>
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>
